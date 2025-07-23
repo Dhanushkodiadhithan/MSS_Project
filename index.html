@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AREA SEPERATOR</title>
+    <link rel="stylesheet" href="./index.css">
+    <script src="./index.js"></script>
+</head>
+<body>
+    <div class="main">
+        <div class="bg-blur"></div>
+        <div class="left">
+            <div class="contain">
+                <div class="folder">
+                    <div class="front-side">
+                    <div class="tip"></div>
+                    <div class="cover"></div>
+                    </div>
+                <div class="back-side cover"></div>
+                </div>
+                <label class="custom-file-upload" id="uploadLabel">
+                    <input class="title" type="file" accept=".xls,.xlsx" id="file" onchange="showFileName()" />
+                     <span id="fileText">Upload a File</span>
+                </label>
+            </div>
+            <h1><span id="fileName"></span></h1>
+            <div id="loadingMessage" style="display: none">
+                <div class="loader">Loading
+                    <span></span>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+
+                        <div class="form">
+                            <p class="form-title">INFO</p>
+                                <div class="input-container">
+                                <input type="number" id="inp1" placeholder="Total Number of columns in the file">
+                                <span>
+                                </span>
+                            </div>
+                            <div class="input-container">
+                                <input type="number" id="inp2" placeholder="To address column number">
+                                </div>
+
+                        <button>
+                            <span class="box"  onclick="convert()">
+                                CONVERT !
+                            </span>
+                        </button>
+                        </div>
+                        <div class="container" style="display: none;" id="converter">
+                        <div class="dot dot-1"></div>
+                        <div class="dot dot-2"></div>
+                        <div class="dot dot-3"></div>
+                        </div>
+                        <div class="centerbtns" id="centerbtns" style="display: none;">
+                            <button class="button" onclick="saveFile()">SAVE</button>
+                            <button class="button" onclick="openFile()">OPEN</button>
+                        </div>
+        </div>
+    </div>
+</body>
+</html>
