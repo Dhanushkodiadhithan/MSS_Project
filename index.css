@@ -18,10 +18,10 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('./Asserts/mettur-transports-parcel-mss-bus--koyambedu-chennai-transporters-v0i43mx043.avif');
+  background-image: url('./Asserts/backgroundimage.avif');
   background-size: cover;
   background-position: center;
-  filter: blur(8px); 
+  filter: blur(4px); 
   z-index: 1;
 }
 .left{
@@ -610,3 +610,33 @@ button {
 }
 
 
+.header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #000;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 99;
+}
+
+.footor{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 99;
+  color: white;
+}
+.footorimg{
+  width: 100px;
+  height: 100px;
+}
